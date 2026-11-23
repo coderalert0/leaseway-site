@@ -339,7 +339,7 @@ else:
 hero_icon = '<img class="hero-icon" src="icon.png" alt="Leaseway app icon" width="88" height="88">' if HAS_ICON else ""
 state_rows = "".join(
     f'<tr><td>{html.escape(st["name"])}</td><td class="num">{st["wells"]:,}</td><td class="num">{st["mb"]:g} MB</td>'
-    f'<td>{" and ".join(html.escape(x["name"]) for x in st["sources"])}</td><td>{st["dataAsOf"]}</td></tr>' for st in STATES)
+    f'<td>{" and ".join(html.escape(x["name"]) for x in st["sources"])}</td><td class="nowrap">{st["dataAsOf"]}</td></tr>' for st in STATES)
 states_table = (f'<div class="table-wrap"><table><thead><tr><th scope="col">State</th><th scope="col">Wells</th><th scope="col">Download</th>'
                 f'<th scope="col">Source</th><th scope="col">Data as of</th></tr></thead><tbody>{state_rows}</tbody></table></div>')
 home = ((PAGES / "home.html").read_text().replace("{GET}", get_button()).replace("{GUIDES}", f'<ul class="guides">{cards}</ul>')

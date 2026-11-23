@@ -140,3 +140,4 @@ footer nav { display:flex; flex-direction:column; gap:8px; } footer nav a { colo
 }
 
 td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+td.nowrap { white-space:nowrap; }
