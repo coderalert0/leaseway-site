@@ -1,0 +1,136 @@
+[
+ {
+  "code": "CA",
+  "name": "California",
+  "wells": 242636,
+  "dataAsOf": "2026-11-22",
+  "mb": 16.4,
+  "sources": [
+   {
+    "name": "California Geologic Energy Management Division (CalGEM)",
+    "url": "https://www.conservation.ca.gov/calgem"
+   }
+  ]
+ },
+ {
+  "code": "CO",
+  "name": "Colorado",
+  "wells": 124462,
+  "dataAsOf": "2026-11-21",
+  "mb": 10.0,
+  "sources": [
+   {
+    "name": "Colorado Energy & Carbon Management Commission",
+    "url": "https://ecmc.colorado.gov/"
+   }
+  ]
+ },
+ {
+  "code": "KS",
+  "name": "Kansas",
+  "wells": 518777,
+  "dataAsOf": "2026-11-13",
+  "mb": 42.0,
+  "sources": [
+   {
+    "name": "Kansas Geological Survey",
+    "url": "https://www.kgs.ku.edu/PRS/petroDB.html"
+   },
+   {
+    "name": "Kansas Corporation Commission",
+    "url": "https://www.kcc.ks.gov/"
+   }
+  ]
+ },
+ {
+  "code": "MT",
+  "name": "Montana",
+  "wells": 42062,
+  "dataAsOf": "2026-11-22",
+  "mb": 3.4,
+  "sources": [
+   {
+    "name": "Montana Board of Oil and Gas Conservation",
+    "url": "https://bogapps.dnrc.mt.gov/"
+   }
+  ]
+ },
+ {
+  "code": "ND",
+  "name": "North Dakota",
+  "wells": 44095,
+  "dataAsOf": "2026-11-22",
+  "mb": 3.6,
+  "sources": [
+   {
+    "name": "North Dakota Industrial Commission, Department of Mineral Resources, Oil and Gas Division",
+    "url": "https://www.dmr.nd.gov/oilgas/"
+   }
+  ]
+ },
+ {
+  "code": "NM",
+  "name": "New Mexico",
+  "wells": 142527,
+  "dataAsOf": "2026-11-22",
+  "mb": 10.7,
+  "sources": [
+   {
+    "name": "New Mexico Oil Conservation Division (EMNRD)",
+    "url": "https://www.emnrd.nm.gov/ocd/"
+   }
+  ]
+ },
+ {
+  "code": "OH",
+  "name": "Ohio",
+  "wells": 242459,
+  "dataAsOf": "2026-11-22",
+  "mb": 17.7,
+  "sources": [
+   {
+    "name": "Ohio Department of Natural Resources, Division of Oil and Gas Resources Management",
+    "url": "https://ohiodnr.gov/discover-and-learn/safety-conservation/about-ODNR/oil-gas"
+   }
+  ]
+ },
+ {
+  "code": "OK",
+  "name": "Oklahoma",
+  "wells": 442517,
+  "dataAsOf": "2026-11-21",
+  "mb": 31.7,
+  "sources": [
+   {
+    "name": "Oklahoma Corporation Commission",
+    "url": "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html"
+   }
+  ]
+ },
+ {
+  "code": "TX",
+  "name": "Texas",
+  "wells": 1398049,
+  "dataAsOf": "2026-11-22",
+  "mb": 97.5,
+  "sources": [
+   {
+    "name": "Railroad Commission of Texas",
+    "url": "https://www.rrc.texas.gov/"
+   }
+  ]
+ },
+ {
+  "code": "WV",
+  "name": "West Virginia",
+  "wells": 114897,
+  "dataAsOf": "2026-11-22",
+  "mb": 9.0,
+  "sources": [
+   {
+    "name": "West Virginia Department of Environmental Protection, Office of Oil and Gas",
+    "url": "https://dep.wv.gov/oil-and-gas/"
+   }
+  ]
+ }
+]

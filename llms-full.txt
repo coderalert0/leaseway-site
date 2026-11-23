@@ -1,0 +1,334 @@
+# Leaseway
+
+> Leaseway is an oil well map for iPhone and iPad. Oilfield drivers, pumpers, hotshots, water haulers, service crews and landmen search any oil or gas well by lease name, well number, API number or operator, see every well on its pad, and get directions in Apple Maps, Google Maps or Waze, with a last-mile compass guide past where the road ends. Wells come from each state's oil and gas agency (10 states, 3.3 million wells) and are stored on the device, so search and the map work with no signal. No account.
+
+Well locations are public records as filed by operators with each state's oil and gas agency and can be wrong or out of date: follow lease signs, the operator's directions and site safety rules. Leaseway is not affiliated with any state agency, operator, Apple, Google, Waze, Wellsite Navigator, Petrix Maps or Petro Path. Checked on November 22, 2026. Source: https://coderalert0.github.io/leaseway-site/
+
+## Key facts
+
+- States and data: California, Colorado, Kansas, Montana, North Dakota, New Mexico, Ohio, Oklahoma, Texas, West Virginia; 3,312,481 wells in all. Each state's wells come from that state's oil and gas regulator's public files (Texas: Railroad Commission of Texas well locations and drilling permits). Leaseway rebuilds them nightly and the app updates downloaded states by itself; every state shows its data date before and after download.
+- Search by lease or well name ("University 7-21 4H"), well number, operator, county, or API number in any form: 10, 12 or 14 digits, with or without dashes, without the state code, or just the last five digits. Results are nearest first, active wells before plugged ones.
+- Pads: wells within about 60 meters of each other are treated as one pad, and the well's screen lists every well on it. The map draws close wells as one numbered badge rather than hiding them.
+- Offline: downloaded states (Texas is about 98 MB; North Dakota about 4 MB) make search, the well dots, details and the guide work with no cell signal. Apple's base map and satellite imagery need a connection unless iOS has them cached.
+- Getting there: directions open in Apple Maps, Google Maps or Waze. The last-mile guide shows a big arrow, the straight-line distance and the compass direction to the wellhead, and says You're there within about 30 meters.
+- Pro features: record your way in over lease roads and follow it next time, send it (GPX) to a crew mate; unlimited lists and pins; send whole lists and pins.
+- Free plan, forever: every well on the map, search, well details, pad lists, notes, one list of 15 places, 10 pins, opening routes and pins a crew mate sends, and 3 trips a week. A trip is directions, the guide, or copying or sharing a place's coordinates; a place already taken that week stays open.
+- Leaseway Pro: $9.99 a month or $79.99 a year in the US (new subscribers get a 1-week free trial on the yearly plan). Unlimited trips, recorded routes, unlimited lists and pins, sending lists and pins. Price promise: subscribers keep their price while they stay subscribed.
+- Privacy: no account, no analytics, no advertising and no third-party code. Location is used on the device only (the guide, distances, route recording). The app downloads state well files from Leaseway's server, which keeps no access logs. App Store privacy label: Data Not Collected.
+- Support: email, answered by a person. Settings › Email support fills in the app version and downloaded states.
+- Runs on iPhone and iPad with iOS 17 or later, in English. Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+
+## Questions and answers
+
+### Is Leaseway free?
+
+Yes, to find wells: every well on the map, search by lease, API number or operator, well details, every well on the pad, notes, one list and 10 pins, with no account. The free plan also includes 3 trips a week (directions, the guide, or a well's coordinates copied or shared). Leaseway Pro removes that limit and adds recorded routes, unlimited lists and pins, and sending whole lists, for $9.99 a month or $79.99 a year (a week free for new subscribers), in the US.
+
+### Does it work with no cell signal?
+
+Yes, for the wells: once a state is downloaded, search, the well dots, details, notes and the last-mile guide work with no signal, because GPS and the compass don't need one. Apple's street map and satellite imagery behind the dots need a connection unless iOS has them cached from earlier, and turn-by-turn directions are up to your maps app.
+
+### Which states are covered?
+
+Texas, New Mexico, Oklahoma, North Dakota, Colorado, Kansas, California, Ohio, Montana and West Virginia: 3,312,481 wells, each from that state's oil and gas regulator. The table above lists each state's source, size and data date.
+
+### How current is the data?
+
+Leaseway rebuilds each state from its agency's own files every night and the app updates the states you've downloaded by itself, on Wi-Fi unless you allow cellular. How current that is depends on the state: Texas's map layer is live, its new drilling permits come nightly and its well records twice a week; North Dakota, Colorado and Oklahoma publish daily or nightly files; New Mexico's is a live service. Each state's date is shown in the app.
+
+### A well is missing or in the wrong place. What can I do?
+
+Locations come from what operators filed with the state, so a new permit can lag a few days and an old well's location can be off. Use the operator's directions and the lease sign. Then email us the API number and what's wrong: we check it against the state's records, and if our copy is wrong we fix it.
+
+### Can I search by API number?
+
+Yes, in any form: 10, 12 or 14 digits, with or without dashes, without the state code (the 8-digit form Texas uses), or just the last five digits. See how to read an API well number.
+
+### Does it route me over the lease roads?
+
+Not turn by turn: no public map has every lease road. Your maps app gets you as close as public roads go, then the guide points you to the wellhead in a straight line. With Pro you can record your way in over the lease roads once, follow it next time, and send it to your crew.
+
+### Do I need an account?
+
+No. There's nothing to sign up for. Pro is tied to your Apple Account, and Restore Purchases brings it to your other iPhone or iPad.
+
+### Does my location leave my phone?
+
+No. Location is used on your phone for distances, the guide and recording routes. Leaseway has no analytics. The only thing the app downloads from our server is the state well files, and the server keeps no access logs. See the privacy policy.
+
+### How do I cancel Pro?
+
+Pro is billed by Apple. On your iPhone go to Settings › your name › Subscriptions › Leaseway and cancel at least 24 hours before the current period ends. Your notes, lists, pins and routes stay on your phone.
+
+### Which devices?
+
+iPhone and iPad with iOS 17 or later. On iPad, the well panel sits beside the map.
+
+---
+
+# Oil and gas well locations by state: where the free public data comes from
+
+> Every oil-producing state's regulator publishes its wells' locations for free, usually as a public map service or a downloadable file. Texas has the Railroad Commission's GIS well layer plus its well and permit files, New Mexico the OCD's well map service, Oklahoma the OCC's RBDMS well file, North Dakota the NDIC's daily well shapefile, and Colorado the ECMC's daily well-spot shapefile. Locations are what operators filed, so they can be off, and some states' coordinates use the older NAD27 datum.
+
+Source page: https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.html
+Checked against its sources on November 22, 2026. Published by Leaseway, an oil well map for iPhone and iPad.
+
+## The short list
+
+These are the sources Leaseway rebuilds its well maps from every night, checked on November 22, 2026. Each one is the state regulator's own public data; none needs an account.
+
+| State | Agency | What's published | How often |
+|---|---|---|---|
+| Texas | Railroad Commission of Texas (RRC) | Public GIS "Well Locations" layer (1.4 million points); statewide well records by county; drilling permits with coordinates | Map layer live; well records twice a week; permits nightly and monthly |
+| New Mexico | Oil Conservation Division (OCD), EMNRD | Public "Oil and Gas Wells" map service | Live (the OCD's permitting database) |
+| Oklahoma | Oklahoma Corporation Commission (OCC) | RBDMS well data file (CSV) | Nightly |
+| North Dakota | NDIC Department of Mineral Resources, Oil and Gas Division | Well shapefile | Daily |
+| Colorado | Energy & Carbon Management Commission (ECMC, formerly COGCC) | "Well Spots (APIs)" shapefile, all wells regardless of status | Daily |
+| Kansas | Kansas Geological Survey (KGS), with Kansas Corporation Commission status | KGS master well list | Every week or two |
+| California | Geologic Energy Management Division (CalGEM) | WellSTAR "Wells" map service | Live |
+| Ohio | ODNR Division of Oil and Gas Resources Management | Public oil and gas wells map service | Live |
+| Montana | Board of Oil and Gas Conservation | DataMiner map service | Live |
+| West Virginia | WVDEP Office of Oil and Gas | TAGIS oil and gas wells map service | Live |
+
+## Texas: three files make one well
+
+Texas splits a well across several RRC products, joined by the well's 8-digit API number (county code plus unique number, without Texas's state code 42):
+
+- **Where it is:** the RRC's public GIS service has a "Well Locations" layer with each well's API, symbol (oil, gas, plugged, permitted and so on) and NAD83 latitude and longitude.
+- **What it's called:** the RRC's "Statewide API Data" files (one per county, described in the RRC's Well API manual) hold the lease name, well number, operator and field. A well can point to another API (its "refer to" API), and the manual says to follow it.
+- **What's new:** the "Drilling Permit Master and Trailer" files list approved permits with their surface location, so a well can show up on the map as soon as it's permitted, before it appears in the GIS layer.
+
+## New Mexico, California, Ohio, Montana, West Virginia: live map services
+
+These states publish their wells through public ArcGIS map services, the same ones behind their own web maps. A service can be queried for every well with its API number, name, operator, status and coordinates. New Mexico's OCD service includes plugged and cancelled wells and new permits; California's WellSTAR layer is documented in CalGEM's GIS ReadMe, which states its coordinates are NAD83.
+
+## Oklahoma, North Dakota, Colorado, Kansas: downloadable files
+
+- **Oklahoma:** the OCC publishes the RBDMS well file as a CSV with a data dictionary.
+- **North Dakota:** the NDIC's Oil and Gas Division posts a well shapefile that is refreshed daily.
+- **Colorado:** the ECMC's "Well Spots (APIs)" shapefile covers all wells, regardless of status, and is refreshed daily.
+- **Kansas:** the KGS master list of oil and gas wells comes as a zipped text file. Its metadata says the latitudes use the NAD 1927 datum, which can put a point tens of meters from where NAD83 or WGS84 would; convert it before you compare it with a phone's GPS.
+
+## Why a location can be wrong
+
+Every one of these is what an operator filed, sometimes decades ago and sometimes from a survey plat, and the agencies publish it as filed. Old wells can be noticeably off; a few have no coordinates at all; a brand-new permit can take a day or more to reach the files. Plugged and cancelled wells stay in most files. Use the location to get close, then the lease sign and the operator's directions.
+
+## Frequently asked questions
+
+### Is oil and gas well location data public?
+
+Yes. Each state's oil and gas regulator publishes its wells' locations, operators and statuses as public records, free to download or query, with no account.
+
+### Which states publish their wells as a live map service?
+
+Of the ten above, New Mexico, California, Ohio, Montana and West Virginia publish their wells as live public map services, and Texas publishes its well locations that way too. Oklahoma, North Dakota, Colorado and Kansas publish downloadable files.
+
+### Why don't the coordinates line up with my GPS?
+
+Some states store the older NAD27 datum (Kansas says so in its metadata), while phones use WGS84. The difference can be tens of meters. The filed location itself can also be off, especially for old wells.
+
+## Sources
+
+- [Railroad Commission of Texas: public GIS map services](https://gis.rrc.texas.gov/server/rest/services/rrc_public/RRC_Public_Viewer_Srvs/MapServer)
+- [Railroad Commission of Texas: Well API manual (Statewide API Data)](https://www.rrc.texas.gov/media/bkyl5qvx/well-api-manual.pdf)
+- [Railroad Commission of Texas: Drilling Permit Master and Trailer layout (OGA049M)](https://www.rrc.texas.gov/media/zgccdjpi/drillingpermitmasterpluslatitudeslongitudes_oga049m_july1.pdf)
+- [New Mexico OCD: Oil and Gas Wells map service](https://gis.emnrd.nm.gov/arcgis/rest/services/OCDView/Wells_Public/MapServer/0)
+- [Oklahoma Corporation Commission: Oil and Gas data files](https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html)
+- [North Dakota Oil and Gas Division](https://www.dmr.nd.gov/oilgas/)
+- [Colorado ECMC: data downloads](https://ecmc.colorado.gov/)
+- [Kansas Geological Survey: oil and gas well database](https://www.kgs.ku.edu/PRS/petroDB.html)
+- [Kansas Geological Survey: well data metadata (datum)](https://www.kgs.ku.edu/Magellan/Qualified/ogwell_fgdc.html)
+- [CalGEM: GIS metadata ReadMe](https://www.conservation.ca.gov/calgem/maps/Documents/GIS-metadata-ReadMe.pdf)
+- [Ohio DNR: Oil and Gas Wells map service](https://gis.ohiodnr.gov/arcgis/rest/services/DOG_Services/Oilgas_Wells_public/MapServer/0)
+- [Montana Board of Oil and Gas Conservation](https://bogapps.dnrc.mt.gov/)
+- [West Virginia DEP Office of Oil and Gas](https://dep.wv.gov/oil-and-gas/)
+
+
+---
+
+# How to read an API well number
+
+> An API well number (now officially the US Well Number) starts with 10 digits that identify a well's surface location: a 2-digit state code (Texas is 42), a 3-digit county code and a 5-digit well code. Digits 11–12, where a state issues them, identify one wellbore from that surface location, such as a sidetrack. Texas usually shows only 8 digits, the county and well codes, without the 42.
+
+Source page: https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.html
+Checked against its sources on November 22, 2026. Published by Leaseway, an oil well map for iPhone and iPad.
+
+## The digits
+
+The numbering scheme was introduced by the American Petroleum Institute in 1966 (API Bulletin D12A, last revised in 1979). In 2010 the API handed it to the Professional Petroleum Data Management Association (PPDM), whose 2013 *US Well Number Standard* replaced the bulletin. The number is still widely called the API number.
+
+| Digits | Name | Meaning |
+|---|---|---|
+| 1–2 | State code | The state, or an offshore area |
+| 3–5 | County code | The county (parish in Louisiana) of the well's surface location |
+| 6–10 | Well code | One surface location, unique within the county |
+| 11–12 | Wellbore code | One wellbore drilled from that surface location |
+| 13–14 | Extension (optional) | Not defined by the standard; some states use it for completions or other work on a wellbore |
+
+So `42-389-31203` is a Texas (42) well in Reeves County (389) with well code 31203. In practice API numbers are written with 10, 12 or 14 digits, often with dashes. Many state regulators issue only the first 10 digits.
+
+The old names for the last digits, "directional sidetrack code" for 11–12 and "event sequence code" for 13–14, still show up on older documents. The current standard calls 11–12 the wellbore code and doesn't number its wellbores in any particular order, so `00` isn't guaranteed to be the original hole.
+
+## State codes
+
+The two-digit state codes are not the FIPS state codes (FIPS uses 48 for Texas). They go back to codes IBM drew up in the 1950s.
+
+| State | Code |
+|---|---|
+| California | 04 |
+| Colorado | 05 |
+| Kansas | 15 |
+| Montana | 25 |
+| New Mexico | 30 |
+| North Dakota | 33 |
+| Ohio | 34 |
+| Oklahoma | 35 |
+| Texas | 42 |
+| West Virginia | 47 |
+
+Offshore federal waters have their own codes, such as 60 for the northern Gulf of Mexico.
+
+## County codes
+
+County codes are usually odd numbers in alphabetical order within a state: West Virginia runs from 001 (Barbour) to 109 (Wyoming), and Oklahoma from 001 (Adair) to 153 (Woodward). Many match the counties' FIPS codes, but the standard doesn't promise that, and there are exceptions: Kern County, California has two codes (029 and 030) because it ran out of well codes, and Arizona, California, Colorado and New Mexico have added codes since 1979. The county code comes from where the well starts at the surface, even if the hole ends in another county, though a few regulators have used the producing zone's county instead.
+
+## Texas shows 8 digits
+
+The Railroad Commission of Texas generally leaves off the state code 42 and shows the 3-digit county code and the 5-digit well code, like `357-80808`. Its Well Records Online search says not to use the 42 at all. So when someone gives you an 8-digit Texas number, it's the same well as the 10-digit number with 42 in front.
+
+Leaseway accepts all of these: 10, 12 or 14 digits, with or without dashes, the 8-digit Texas form, or just the last five digits, the well code, with results nearest you first.
+
+## One well, several numbers
+
+Every wellbore drilled from the same surface location keeps the same first 10 digits. A sidetrack, bypass, pilot hole or (where the regulator says so) a deepening gets a new wellbore code in digits 11–12, and a new wellbore drilled when an abandoned well is re-entered keeps the original first 10 digits. If a rig is skidded to a new spot after a junked hole, the new hole gets a new well code, so its first 10 digits change. Once assigned, a number is never reused for a different well.
+
+The regulator assigns the numbers, usually when the drilling application is received or the permit is issued. Wells drilled before 1966 can still have API numbers: states numbered historical wells after the fact (West Virginia, for one, has numbered every well it permitted since 1929).
+
+## Frequently asked questions
+
+### What does the API number of an oil well mean?
+
+It identifies the well's surface location: the first two digits are the state, the next three the county, and the next five the well. Two more digits, where the state issues them, pick out one wellbore drilled from there.
+
+### What is Texas's API state code?
+
+42. The Railroad Commission of Texas usually doesn't display it, so Texas numbers often appear as 8 digits, county plus well.
+
+### Is the API number the same as the permit number or lease number?
+
+No. A drilling permit and a lease have their own numbers. In Texas one oil lease can include several wells, each with its own API number.
+
+## Sources
+
+- [PPDM: The US Well Number Standard (2013, revision 1)](https://dl.ppdm.org/dl/1209)
+- [PPDM: US Well Number Standard](https://ppdm.org/ppdm/PPDM/IEDS/Well_Identification/US_Well_Number_Standard/PPDM/US_Well_Number_Standard.aspx)
+- [Railroad Commission of Texas: Oil and Gas Well Records Online](https://rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records-online)
+- [Railroad Commission of Texas: Glossary for Well Log List](https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/glossary-for-well-log-list/)
+- [Oklahoma Corporation Commission: Oil and Gas County Table](https://oklahoma.gov/occ/divisions/oil-gas/county-table.html)
+- [West Virginia DEP Office of Oil and Gas: API Well Number Explanation](https://dep.wv.gov/oil-and-gas/GI/API_Explanation/Pages/default.aspx)
+
+
+---
+
+# Leaseway support
+
+Source page: https://coderalert0.github.io/leaseway-site/support.html
+
+A person reads and answers every email, usually within one business day. Write to laddothis@gmail.com. The quickest way is in the app: Settings › Email support opens your mail app with the app version, your device and iOS version, your plan and which states you've downloaded already filled in, so we don't have to ask. A wrong or missing well? Send its API number and what's wrong.
+
+## Getting started
+
+### Download the states you work in
+Open Settings › States and tap the download button next to each state. Each one shows its well count, size, source and data date before you download. Texas is about 98 MB, so use Wi-Fi for it; North Dakota is about 4 MB. Downloaded states update themselves when the app opens, on Wi-Fi unless you turn on Update over cellular there.
+
+### Allow location
+Leaseway uses your location for distances, the nearest wells and the guide. Allow it when asked, or in the device's Settings › Apps › Leaseway › Location (choose While Using the App). Recording your way in over the lease roads (Pro) asks for Always, so recording keeps going with the screen off. Keep Precise Location on: the guide needs it.
+
+### Pick your maps app
+Settings › Directions › Open directions in: Apple Maps, Google Maps or Waze. Press and hold the Directions button on a well to use a different one just this once. If the app you chose isn't installed, its web version opens.
+
+## Finding a well
+
+### How to search
+Type the lease or well name ("university 7-21 4h"), the operator, the county, or the API number in any form: 10, 12 or 14 digits, with or without dashes, without the state code, or the last five digits. Results are nearest first, with active wells ahead of plugged ones. Plugged, dry and cancelled wells are always found by search, even when the map hides them.
+
+### A well is missing
+Check that its state is downloaded and up to date (Settings › States shows each state's data date). A brand-new permit can take a few days to reach the state's files. Some old wells have no location in the state's records and can't be shown. If a well should be there and isn't, email us its API number.
+
+### A well is in the wrong place
+Locations are as filed by the operator with the state, and Leaseway shows them as filed. Follow the operator's directions and the lease sign, and email us the API number: we check our copy against the state's records and fix anything that's ours.
+
+### I can't see plugged wells, permits or some types on the map
+Tap the filter button on the map, or Settings › Map › Which wells to show. Plugged, dry and cancelled wells are hidden on the map by default; permits are shown. You can also show only some operators.
+
+## Getting there
+
+### No cell signal
+Downloaded states work with no signal: search, the well dots, details, notes and the guide. The street map and satellite imagery behind them come from Apple and need a connection unless iOS has them from earlier, so look at the area while you still have signal. Your maps app's turn-by-turn directions depend on that app.
+
+### The guide's arrow spins or points the wrong way
+Hold the phone flat, away from the truck's dash and magnets, and move it in a figure eight to calibrate the compass. Once you're moving, the arrow can follow your direction of travel instead. The distance and compass direction (like "NE · 42°") are from GPS and stay right even when the compass is off.
+
+### Recording your way in (Pro)
+Open the well, tap Record the way in, and drive in. Tap Stop on the "Recording your way in" bar at the pad and name the route. Next time it's under "Your way in" on that well; tap it to show it on the map, or the share button to send it as a GPX file. Whoever you send it to can open it in Leaseway for free.
+
+## Free plan and Pro
+
+### What counts as a trip?
+Directions, the last-mile guide, or copying or sharing a place's coordinates. Each place counts once a week, so going back to the same well that week is free. The free plan has 3 a week, starting again on Monday; the well's screen shows how many are left. Leaseway Pro has no limit.
+
+### Restore Pro on a new phone or an iPad
+Sign in with the same Apple Account, then Settings › Restore purchases in Leaseway. There's no Leaseway account to sign in to.
+
+### Cancel Pro or ask for a refund
+Pro is billed by Apple. To cancel: the device's Settings › your name › Subscriptions › Leaseway, at least 24 hours before the period ends. Refunds are Apple's to decide: request one at reportaproblem.apple.com. Your notes, lists, pins and routes stay either way.
+
+### Move to a new phone
+Your notes, lists, pins and routes move with your iCloud or computer backup, or Quick Start. States download again on the new phone (they aren't in backups, to keep them small).
+
+
+---
+
+# Leaseway privacy policy
+
+Source page: https://coderalert0.github.io/leaseway-site/privacy.html
+
+Effective November 22, 2026.
+Leaseway is an oil and gas well map for iPhone and iPad. There's no account, no analytics and no advertising, and Leaseway contains no third-party code. Nothing about you is sent to us. What the app downloads, and what it sends to Apple, is described below.
+
+## Location
+With your permission, Leaseway uses your device's location to show where you are on the map, the distance and direction to a well, the nearest wells, and the last-mile guide (which also uses the compass). If you record a route (Leaseway Pro), location is used in the background while recording is on, and a "Recording your way in" bar shows it is on. Location is processed on your device and never sent to us or anyone else by Leaseway.
+
+## What stays on your device
+- Your notes, lists, pins and recorded routes, and the wells you opened recently.
+- The free plan's trip count: which places you took a trip to this week (directions, the guide, or copied or shared coordinates), so the count starts again on Monday. It's kept for 60 days at most.
+- Settings: your maps app, units, coordinate format, map style and which wells to show.
+- Downloaded states: the well files themselves (public records).
+These are stored in Leaseway's files on your device. Notes, lists, pins and routes are included in your device's own iCloud or computer backup, as Apple provides for every app; the state files are not backed up, because they download again. Deleting Leaseway deletes all of it from the device.
+
+## Well data downloads
+To download and update states, the app fetches a list of states and the state files from Leaseway's server (leaseway.5-78-157-32.sslip.io). Those requests carry nothing about you beyond what any download does (your network address reaches the server to answer it); the server keeps no access logs, sets no cookies and has no analytics. The app checks for updated states when it opens, over Wi-Fi unless you allow cellular in Settings.
+
+## Maps and directions
+The map behind the wells is Apple Maps (Apple's MapKit): to draw it, iOS loads map images for the area you're looking at from Apple, as it does for any app with a map. When you ask for directions, Leaseway opens the maps app you chose (Apple Maps, Google Maps or Waze) with the well's coordinates and name; that app's own privacy policy applies from there.
+
+## Files you share
+When you share a well, a list, pins or a route (as text or a GPX file), you choose where it goes (Messages, Mail, AirDrop, Files…). Leaseway only creates it. When you open a GPX file someone sent you, Leaseway reads only that file. Email support opens your own mail app with the app version, the iOS version, the device model, your plan and which states you've downloaded; you see the message and decide whether to send it. If you email us, we use what you send only to answer you.
+
+## Purchases
+Leaseway Pro is sold and billed by Apple. Leaseway learns only whether you have Pro, never your name or payment details.
+
+## Ratings
+Leaseway may ask for an App Store rating using Apple's own rating prompt, which Apple shows at most three times a year. Leaseway keeps only the dates it was used and when it last asked, on your device.
+
+## What is not collected
+No account, no contact details, no identifiers, no analytics, no advertising, no tracking, and no data sold or shared with anyone. Leaseway's privacy manifest declares that it collects no data and doesn't track you.
+
+## Children
+Leaseway is a work tool for the oilfield and isn't directed to children. It collects no personal information from anyone.
+
+## Changes
+If this policy changes, the new version will be posted on this page with a new date.
+
+## Contact
+Questions about this policy: laddothis@gmail.com

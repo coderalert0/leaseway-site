@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Read an API Well Number (US Well Number), Digit by Digit</title>
+<meta name="description" content="What each digit of an API well number means, the state codes (Texas 42, New Mexico 30, Oklahoma 35), why Texas shows 8 digits, and why one well has several numbers.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.html">
+<link rel="alternate" type="text/markdown" href="how-to-read-an-api-well-number.md">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Leaseway">
+<meta property="og:title" content="How to Read an API Well Number (US Well Number), Digit by Digit">
+<meta property="og:description" content="What each digit of an API well number means, the state codes (Texas 42, New Mexico 30, Oklahoma 35), why Texas shows 8 digits, and why one well has several numbers.">
+<meta property="og:url" content="https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.html">
+<meta property="og:image" content="https://coderalert0.github.io/leaseway-site/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Leaseway, the oil well map for iPhone and iPad: every well on the pad, and the way in">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to read an API well number", "description": "What each digit of an API well number means, the state codes (Texas 42, New Mexico 30, Oklahoma 35), why Texas shows 8 digits, and why one well has several numbers.", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "mainEntityOfPage": "https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.html", "image": "https://coderalert0.github.io/leaseway-site/img/og.png", "author": {"@type": "Organization", "name": "Leaseway", "url": "https://coderalert0.github.io/leaseway-site/", "logo": "https://coderalert0.github.io/leaseway-site/img/icon-512.png"}, "publisher": {"@type": "Organization", "name": "Leaseway", "url": "https://coderalert0.github.io/leaseway-site/", "logo": "https://coderalert0.github.io/leaseway-site/img/icon-512.png"}, "inLanguage": "en-US", "citation": ["https://dl.ppdm.org/dl/1209", "https://ppdm.org/ppdm/PPDM/IEDS/Well_Identification/US_Well_Number_Standard/PPDM/US_Well_Number_Standard.aspx", "https://rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records-online", "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/glossary-for-well-log-list/", "https://oklahoma.gov/occ/divisions/oil-gas/county-table.html", "https://dep.wv.gov/oil-and-gas/GI/API_Explanation/Pages/default.aspx"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://coderalert0.github.io/leaseway-site/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://coderalert0.github.io/leaseway-site/#guides"}, {"@type": "ListItem", "position": 3, "name": "Reading an API number", "item": "https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the API number of an oil well mean?", "acceptedAnswer": {"@type": "Answer", "text": "It identifies the well's surface location: the first two digits are the state, the next three the county, and the next five the well. Two more digits, where the state issues them, pick out one wellbore drilled from there."}}, {"@type": "Question", "name": "What is Texas's API state code?", "acceptedAnswer": {"@type": "Answer", "text": "42. The Railroad Commission of Texas usually doesn't display it, so Texas numbers often appear as 8 digits, county plus well."}}, {"@type": "Question", "name": "Is the API number the same as the permit number or lease number?", "acceptedAnswer": {"@type": "Answer", "text": "No. A drilling permit and a lease have their own numbers. In Texas one oil lease can include several wells, each with its own API number."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="34" height="34"><span>Leaseway</span></a>
+    <nav class="nav" aria-label="Site">
+      <a class="hide-sm" href="./#states">States</a>
+      <a class="hide-sm" href="./#pricing">Pricing</a>
+      <a class="hide-sm" href="./#guides" aria-current="page">Guides</a>
+      <a href="support.html">Support</a>
+      <a class="nav-cta" href="./#get">Coming soon</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="guide">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a> <span aria-hidden="true">/</span> <a href="./#guides">Guides</a> <span aria-hidden="true">/</span> <span>Reading an API number</span></nav>
+<article>
+<h1>How to read an API well number</h1>
+<p class="updated">Checked against its sources on <time datetime="2026-11-22">November 22, 2026</time></p>
+<div class="answer"><h2>Short answer</h2><p>An API well number (now officially the US Well Number) starts with 10 digits that identify a well&#x27;s surface location: a 2-digit state code (Texas is 42), a 3-digit county code and a 5-digit well code. Digits 11–12, where a state issues them, identify one wellbore from that surface location, such as a sidetrack. Texas usually shows only 8 digits, the county and well codes, without the 42.</p></div>
+<nav class="toc" aria-label="On this page"><p class="foot-title">On this page</p><ul><li><a href="#the-digits">The digits</a></li><li><a href="#state-codes">State codes</a></li><li><a href="#county-codes">County codes</a></li><li><a href="#texas-shows-8-digits">Texas shows 8 digits</a></li><li><a href="#one-well-several-numbers">One well, several numbers</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
+<h2 id="the-digits">The digits</h2>
+<p>The numbering scheme was introduced by the American Petroleum Institute in 1966 (API Bulletin D12A, last revised in 1979). In 2010 the API handed it to the Professional Petroleum Data Management Association (PPDM), whose 2013 <em>US Well Number Standard</em> replaced the bulletin. The number is still widely called the API number.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Digits</th>
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–2</td>
+<td>State code</td>
+<td>The state, or an offshore area</td>
+</tr>
+<tr>
+<td>3–5</td>
+<td>County code</td>
+<td>The county (parish in Louisiana) of the well's surface location</td>
+</tr>
+<tr>
+<td>6–10</td>
+<td>Well code</td>
+<td>One surface location, unique within the county</td>
+</tr>
+<tr>
+<td>11–12</td>
+<td>Wellbore code</td>
+<td>One wellbore drilled from that surface location</td>
+</tr>
+<tr>
+<td>13–14</td>
+<td>Extension (optional)</td>
+<td>Not defined by the standard; some states use it for completions or other work on a wellbore</td>
+</tr>
+</tbody>
+</table></div>
+<p>So <code>42-389-31203</code> is a Texas (42) well in Reeves County (389) with well code 31203. In practice API numbers are written with 10, 12 or 14 digits, often with dashes. Many state regulators issue only the first 10 digits.</p>
+<p>The old names for the last digits, "directional sidetrack code" for 11–12 and "event sequence code" for 13–14, still show up on older documents. The current standard calls 11–12 the wellbore code and doesn't number its wellbores in any particular order, so <code>00</code> isn't guaranteed to be the original hole.</p>
+<h2 id="state-codes">State codes</h2>
+<p>The two-digit state codes are not the FIPS state codes (FIPS uses 48 for Texas). They go back to codes IBM drew up in the 1950s.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>State</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>California</td>
+<td>04</td>
+</tr>
+<tr>
+<td>Colorado</td>
+<td>05</td>
+</tr>
+<tr>
+<td>Kansas</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Montana</td>
+<td>25</td>
+</tr>
+<tr>
+<td>New Mexico</td>
+<td>30</td>
+</tr>
+<tr>
+<td>North Dakota</td>
+<td>33</td>
+</tr>
+<tr>
+<td>Ohio</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Oklahoma</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Texas</td>
+<td>42</td>
+</tr>
+<tr>
+<td>West Virginia</td>
+<td>47</td>
+</tr>
+</tbody>
+</table></div>
+<p>Offshore federal waters have their own codes, such as 60 for the northern Gulf of Mexico.</p>
+<h2 id="county-codes">County codes</h2>
+<p>County codes are usually odd numbers in alphabetical order within a state: West Virginia runs from 001 (Barbour) to 109 (Wyoming), and Oklahoma from 001 (Adair) to 153 (Woodward). Many match the counties' FIPS codes, but the standard doesn't promise that, and there are exceptions: Kern County, California has two codes (029 and 030) because it ran out of well codes, and Arizona, California, Colorado and New Mexico have added codes since 1979. The county code comes from where the well starts at the surface, even if the hole ends in another county, though a few regulators have used the producing zone's county instead.</p>
+<h2 id="texas-shows-8-digits">Texas shows 8 digits</h2>
+<p>The Railroad Commission of Texas generally leaves off the state code 42 and shows the 3-digit county code and the 5-digit well code, like <code>357-80808</code>. Its Well Records Online search says not to use the 42 at all. So when someone gives you an 8-digit Texas number, it's the same well as the 10-digit number with 42 in front.</p>
+<p>Leaseway accepts all of these: 10, 12 or 14 digits, with or without dashes, the 8-digit Texas form, or just the last five digits, the well code, with results nearest you first.</p>
+<h2 id="one-well-several-numbers">One well, several numbers</h2>
+<p>Every wellbore drilled from the same surface location keeps the same first 10 digits. A sidetrack, bypass, pilot hole or (where the regulator says so) a deepening gets a new wellbore code in digits 11–12, and a new wellbore drilled when an abandoned well is re-entered keeps the original first 10 digits. If a rig is skidded to a new spot after a junked hole, the new hole gets a new well code, so its first 10 digits change. Once assigned, a number is never reused for a different well.</p>
+<p>The regulator assigns the numbers, usually when the drilling application is received or the permit is issued. Wells drilled before 1966 can still have API numbers: states numbered historical wells after the fact (West Virginia, for one, has numbered every well it permitted since 1929).</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="what-does-the-api-number-of-an-oil-well-mean">What does the API number of an oil well mean?</h3>
+<p>It identifies the well's surface location: the first two digits are the state, the next three the county, and the next five the well. Two more digits, where the state issues them, pick out one wellbore drilled from there.</p>
+<h3 id="what-is-texass-api-state-code">What is Texas's API state code?</h3>
+<ol start="42">
+<li>The Railroad Commission of Texas usually doesn't display it, so Texas numbers often appear as 8 digits, county plus well.</li>
+</ol>
+<h3 id="is-the-api-number-the-same-as-the-permit-number-or-lease-number">Is the API number the same as the permit number or lease number?</h3>
+<p>No. A drilling permit and a lease have their own numbers. In Texas one oil lease can include several wells, each with its own API number.</p>
+<aside class="app-cta">
+  <div><h2>Find the well, see the whole pad, get there</h2><p>Leaseway searches every well in 10 states by lease, API number or operator, lists every well on the pad, and guides you the last mile, with no signal. No account, on iPhone and iPad.</p></div>
+  <span class="soon">Coming soon to the App Store<small>For iPhone, iOS 17 or later</small></span>
+</aside>
+<section class="sources"><h2>Sources</h2><ul><li><a href="https://dl.ppdm.org/dl/1209" rel="noopener">PPDM: The US Well Number Standard (2013, revision 1)</a></li><li><a href="https://ppdm.org/ppdm/PPDM/IEDS/Well_Identification/US_Well_Number_Standard/PPDM/US_Well_Number_Standard.aspx" rel="noopener">PPDM: US Well Number Standard</a></li><li><a href="https://rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records-online" rel="noopener">Railroad Commission of Texas: Oil and Gas Well Records Online</a></li><li><a href="https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/glossary-for-well-log-list/" rel="noopener">Railroad Commission of Texas: Glossary for Well Log List</a></li><li><a href="https://oklahoma.gov/occ/divisions/oil-gas/county-table.html" rel="noopener">Oklahoma Corporation Commission: Oil and Gas County Table</a></li><li><a href="https://dep.wv.gov/oil-and-gas/GI/API_Explanation/Pages/default.aspx" rel="noopener">West Virginia DEP Office of Oil and Gas: API Well Number Explanation</a></li></ul><p class="muted">Guides summarize public sources. Check the agency's own records before you rely on a detail.</p></section>
+<section class="related"><h2>Related guides</h2><ul><li><a href="oil-gas-well-data-by-state.html">Oil and gas well locations by state: where the free public data comes from</a></li></ul></section>
+</article>
+</div>
+</main>
+<footer>
+  <div class="in">
+    <div class="foot-about">
+      <a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28"><span>Leaseway</span></a>
+      <p>The oil well map for iPhone and iPad.</p>
+      <p>© 2026 Leaseway. Well locations are public records as filed by operators with each state's oil and gas agency and can be wrong or out of date: follow lease signs, the operator's directions and site safety rules. Leaseway is not affiliated with any state agency, operator, Apple, Google, Waze, Wellsite Navigator, Petrix Maps or Petro Path.</p>
+    </div>
+    <nav aria-label="Guides"><p class="foot-title">Guides</p><a href="oil-gas-well-data-by-state.html">Well data by state</a><a href="how-to-read-an-api-well-number.html">Reading an API number</a></nav>
+    <nav aria-label="App"><p class="foot-title">App</p><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="llms.txt">llms.txt</a></nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

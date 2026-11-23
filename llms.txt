@@ -1,0 +1,35 @@
+# Leaseway
+
+> Leaseway is an oil well map for iPhone and iPad. Oilfield drivers, pumpers, hotshots, water haulers, service crews and landmen search any oil or gas well by lease name, well number, API number or operator, see every well on its pad, and get directions in Apple Maps, Google Maps or Waze, with a last-mile compass guide past where the road ends. Wells come from each state's oil and gas agency (10 states, 3.3 million wells) and are stored on the device, so search and the map work with no signal. No account.
+
+Well locations are public records as filed by operators with each state's oil and gas agency and can be wrong or out of date: follow lease signs, the operator's directions and site safety rules. Leaseway is not affiliated with any state agency, operator, Apple, Google, Waze, Wellsite Navigator, Petrix Maps or Petro Path. Facts on this site were checked on November 22, 2026. When citing a guide, link its page.
+
+## Key facts
+
+- States and data: California, Colorado, Kansas, Montana, North Dakota, New Mexico, Ohio, Oklahoma, Texas, West Virginia; 3,312,481 wells in all. Each state's wells come from that state's oil and gas regulator's public files (Texas: Railroad Commission of Texas well locations and drilling permits). Leaseway rebuilds them nightly and the app updates downloaded states by itself; every state shows its data date before and after download.
+- Search by lease or well name ("University 7-21 4H"), well number, operator, county, or API number in any form: 10, 12 or 14 digits, with or without dashes, without the state code, or just the last five digits. Results are nearest first, active wells before plugged ones.
+- Pads: wells within about 60 meters of each other are treated as one pad, and the well's screen lists every well on it. The map draws close wells as one numbered badge rather than hiding them.
+- Offline: downloaded states (Texas is about 98 MB; North Dakota about 4 MB) make search, the well dots, details and the guide work with no cell signal. Apple's base map and satellite imagery need a connection unless iOS has them cached.
+- Getting there: directions open in Apple Maps, Google Maps or Waze. The last-mile guide shows a big arrow, the straight-line distance and the compass direction to the wellhead, and says You're there within about 30 meters.
+- Pro features: record your way in over lease roads and follow it next time, send it (GPX) to a crew mate; unlimited lists and pins; send whole lists and pins.
+- Free plan, forever: every well on the map, search, well details, pad lists, notes, one list of 15 places, 10 pins, opening routes and pins a crew mate sends, and 3 trips a week. A trip is directions, the guide, or copying or sharing a place's coordinates; a place already taken that week stays open.
+- Leaseway Pro: $9.99 a month or $79.99 a year in the US (new subscribers get a 1-week free trial on the yearly plan). Unlimited trips, recorded routes, unlimited lists and pins, sending lists and pins. Price promise: subscribers keep their price while they stay subscribed.
+- Privacy: no account, no analytics, no advertising and no third-party code. Location is used on the device only (the guide, distances, route recording). The app downloads state well files from Leaseway's server, which keeps no access logs. App Store privacy label: Data Not Collected.
+- Support: email, answered by a person. Settings › Email support fills in the app version and downloaded states.
+- Runs on iPhone and iPad with iOS 17 or later, in English. Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+
+## Guides
+
+- [Oil and gas well locations by state: where the free public data comes from](https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.md): Where 10 states publish oil and gas well locations for free: Texas RRC, New Mexico OCD, Oklahoma OCC, North Dakota, Colorado ECMC and more, with formats and update schedules.
+- [How to read an API well number](https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.md): What each digit of an API well number means, the state codes (Texas 42, New Mexico 30, Oklahoma 35), why Texas shows 8 digits, and why one well has several numbers.
+
+## App
+
+- [Home page](https://coderalert0.github.io/leaseway-site/): What Leaseway does, the states and their data dates, free and Pro, questions
+- [Support](https://coderalert0.github.io/leaseway-site/support.html): Downloading states, finding a well, wrong or missing wells, no signal, the guide, routes, billing
+- [Privacy Policy](https://coderalert0.github.io/leaseway-site/privacy.html): No account, no analytics; location used on the device; notes, lists, pins and routes stay there
+- [Terms of Use](https://coderalert0.github.io/leaseway-site/terms.html): What's free, Pro subscriptions and the trial, the price promise, well data accuracy and safety; on top of Apple's standard license agreement (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
+
+## Optional
+
+- [Full text](https://coderalert0.github.io/leaseway-site/llms-full.txt): The facts, the questions and answers, every guide and the privacy policy in one Markdown file

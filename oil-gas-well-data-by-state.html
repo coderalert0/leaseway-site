@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oil and Gas Well Locations by State: Free Public Data Sources</title>
+<meta name="description" content="Where 10 states publish oil and gas well locations for free: Texas RRC, New Mexico OCD, Oklahoma OCC, North Dakota, Colorado ECMC and more, with formats and update schedules.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.html">
+<link rel="alternate" type="text/markdown" href="oil-gas-well-data-by-state.md">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Leaseway">
+<meta property="og:title" content="Oil and Gas Well Locations by State: Free Public Data Sources">
+<meta property="og:description" content="Where 10 states publish oil and gas well locations for free: Texas RRC, New Mexico OCD, Oklahoma OCC, North Dakota, Colorado ECMC and more, with formats and update schedules.">
+<meta property="og:url" content="https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.html">
+<meta property="og:image" content="https://coderalert0.github.io/leaseway-site/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Leaseway, the oil well map for iPhone and iPad: every well on the pad, and the way in">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Oil and gas well locations by state: where the free public data comes from", "description": "Where 10 states publish oil and gas well locations for free: Texas RRC, New Mexico OCD, Oklahoma OCC, North Dakota, Colorado ECMC and more, with formats and update schedules.", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "mainEntityOfPage": "https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.html", "image": "https://coderalert0.github.io/leaseway-site/img/og.png", "author": {"@type": "Organization", "name": "Leaseway", "url": "https://coderalert0.github.io/leaseway-site/", "logo": "https://coderalert0.github.io/leaseway-site/img/icon-512.png"}, "publisher": {"@type": "Organization", "name": "Leaseway", "url": "https://coderalert0.github.io/leaseway-site/", "logo": "https://coderalert0.github.io/leaseway-site/img/icon-512.png"}, "inLanguage": "en-US", "citation": ["https://gis.rrc.texas.gov/server/rest/services/rrc_public/RRC_Public_Viewer_Srvs/MapServer", "https://www.rrc.texas.gov/media/bkyl5qvx/well-api-manual.pdf", "https://www.rrc.texas.gov/media/zgccdjpi/drillingpermitmasterpluslatitudeslongitudes_oga049m_july1.pdf", "https://gis.emnrd.nm.gov/arcgis/rest/services/OCDView/Wells_Public/MapServer/0", "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html", "https://www.dmr.nd.gov/oilgas/", "https://ecmc.colorado.gov/", "https://www.kgs.ku.edu/PRS/petroDB.html", "https://www.kgs.ku.edu/Magellan/Qualified/ogwell_fgdc.html", "https://www.conservation.ca.gov/calgem/maps/Documents/GIS-metadata-ReadMe.pdf", "https://gis.ohiodnr.gov/arcgis/rest/services/DOG_Services/Oilgas_Wells_public/MapServer/0", "https://bogapps.dnrc.mt.gov/", "https://dep.wv.gov/oil-and-gas/"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://coderalert0.github.io/leaseway-site/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://coderalert0.github.io/leaseway-site/#guides"}, {"@type": "ListItem", "position": 3, "name": "Well data by state", "item": "https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is oil and gas well location data public?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each state's oil and gas regulator publishes its wells' locations, operators and statuses as public records, free to download or query, with no account."}}, {"@type": "Question", "name": "Which states publish their wells as a live map service?", "acceptedAnswer": {"@type": "Answer", "text": "Of the ten above, New Mexico, California, Ohio, Montana and West Virginia publish their wells as live public map services, and Texas publishes its well locations that way too. Oklahoma, North Dakota, Colorado and Kansas publish downloadable files."}}, {"@type": "Question", "name": "Why don't the coordinates line up with my GPS?", "acceptedAnswer": {"@type": "Answer", "text": "Some states store the older NAD27 datum (Kansas says so in its metadata), while phones use WGS84. The difference can be tens of meters. The filed location itself can also be off, especially for old wells."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="34" height="34"><span>Leaseway</span></a>
+    <nav class="nav" aria-label="Site">
+      <a class="hide-sm" href="./#states">States</a>
+      <a class="hide-sm" href="./#pricing">Pricing</a>
+      <a class="hide-sm" href="./#guides" aria-current="page">Guides</a>
+      <a href="support.html">Support</a>
+      <a class="nav-cta" href="./#get">Coming soon</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="guide">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a> <span aria-hidden="true">/</span> <a href="./#guides">Guides</a> <span aria-hidden="true">/</span> <span>Well data by state</span></nav>
+<article>
+<h1>Oil and gas well locations by state: where the free public data comes from</h1>
+<p class="updated">Checked against its sources on <time datetime="2026-11-22">November 22, 2026</time></p>
+<div class="answer"><h2>Short answer</h2><p>Every oil-producing state&#x27;s regulator publishes its wells&#x27; locations for free, usually as a public map service or a downloadable file. Texas has the Railroad Commission&#x27;s GIS well layer plus its well and permit files, New Mexico the OCD&#x27;s well map service, Oklahoma the OCC&#x27;s RBDMS well file, North Dakota the NDIC&#x27;s daily well shapefile, and Colorado the ECMC&#x27;s daily well-spot shapefile. Locations are what operators filed, so they can be off, and some states&#x27; coordinates use the older NAD27 datum.</p></div>
+<nav class="toc" aria-label="On this page"><p class="foot-title">On this page</p><ul><li><a href="#the-short-list">The short list</a></li><li><a href="#texas-three-files-make-one-well">Texas: three files make one well</a></li><li><a href="#new-mexico-california-ohio-montana-west-virginia-live-map-services">New Mexico, California, Ohio, Montana, West Virginia: live map services</a></li><li><a href="#oklahoma-north-dakota-colorado-kansas-downloadable-files">Oklahoma, North Dakota, Colorado, Kansas: downloadable files</a></li><li><a href="#why-a-location-can-be-wrong">Why a location can be wrong</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
+<h2 id="the-short-list">The short list</h2>
+<p>These are the sources Leaseway rebuilds its well maps from every night, checked on November 22, 2026. Each one is the state regulator's own public data; none needs an account.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>State</th>
+<th>Agency</th>
+<th>What's published</th>
+<th>How often</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Texas</td>
+<td>Railroad Commission of Texas (RRC)</td>
+<td>Public GIS "Well Locations" layer (1.4 million points); statewide well records by county; drilling permits with coordinates</td>
+<td>Map layer live; well records twice a week; permits nightly and monthly</td>
+</tr>
+<tr>
+<td>New Mexico</td>
+<td>Oil Conservation Division (OCD), EMNRD</td>
+<td>Public "Oil and Gas Wells" map service</td>
+<td>Live (the OCD's permitting database)</td>
+</tr>
+<tr>
+<td>Oklahoma</td>
+<td>Oklahoma Corporation Commission (OCC)</td>
+<td>RBDMS well data file (CSV)</td>
+<td>Nightly</td>
+</tr>
+<tr>
+<td>North Dakota</td>
+<td>NDIC Department of Mineral Resources, Oil and Gas Division</td>
+<td>Well shapefile</td>
+<td>Daily</td>
+</tr>
+<tr>
+<td>Colorado</td>
+<td>Energy &amp; Carbon Management Commission (ECMC, formerly COGCC)</td>
+<td>"Well Spots (APIs)" shapefile, all wells regardless of status</td>
+<td>Daily</td>
+</tr>
+<tr>
+<td>Kansas</td>
+<td>Kansas Geological Survey (KGS), with Kansas Corporation Commission status</td>
+<td>KGS master well list</td>
+<td>Every week or two</td>
+</tr>
+<tr>
+<td>California</td>
+<td>Geologic Energy Management Division (CalGEM)</td>
+<td>WellSTAR "Wells" map service</td>
+<td>Live</td>
+</tr>
+<tr>
+<td>Ohio</td>
+<td>ODNR Division of Oil and Gas Resources Management</td>
+<td>Public oil and gas wells map service</td>
+<td>Live</td>
+</tr>
+<tr>
+<td>Montana</td>
+<td>Board of Oil and Gas Conservation</td>
+<td>DataMiner map service</td>
+<td>Live</td>
+</tr>
+<tr>
+<td>West Virginia</td>
+<td>WVDEP Office of Oil and Gas</td>
+<td>TAGIS oil and gas wells map service</td>
+<td>Live</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="texas-three-files-make-one-well">Texas: three files make one well</h2>
+<p>Texas splits a well across several RRC products, joined by the well's 8-digit API number (county code plus unique number, without Texas's state code 42):</p>
+<ul>
+<li><strong>Where it is:</strong> the RRC's public GIS service has a "Well Locations" layer with each well's API, symbol (oil, gas, plugged, permitted and so on) and NAD83 latitude and longitude.</li>
+<li><strong>What it's called:</strong> the RRC's "Statewide API Data" files (one per county, described in the RRC's Well API manual) hold the lease name, well number, operator and field. A well can point to another API (its "refer to" API), and the manual says to follow it.</li>
+<li><strong>What's new:</strong> the "Drilling Permit Master and Trailer" files list approved permits with their surface location, so a well can show up on the map as soon as it's permitted, before it appears in the GIS layer.</li>
+</ul>
+<h2 id="new-mexico-california-ohio-montana-west-virginia-live-map-services">New Mexico, California, Ohio, Montana, West Virginia: live map services</h2>
+<p>These states publish their wells through public ArcGIS map services, the same ones behind their own web maps. A service can be queried for every well with its API number, name, operator, status and coordinates. New Mexico's OCD service includes plugged and cancelled wells and new permits; California's WellSTAR layer is documented in CalGEM's GIS ReadMe, which states its coordinates are NAD83.</p>
+<h2 id="oklahoma-north-dakota-colorado-kansas-downloadable-files">Oklahoma, North Dakota, Colorado, Kansas: downloadable files</h2>
+<ul>
+<li><strong>Oklahoma:</strong> the OCC publishes the RBDMS well file as a CSV with a data dictionary.</li>
+<li><strong>North Dakota:</strong> the NDIC's Oil and Gas Division posts a well shapefile that is refreshed daily.</li>
+<li><strong>Colorado:</strong> the ECMC's "Well Spots (APIs)" shapefile covers all wells, regardless of status, and is refreshed daily.</li>
+<li><strong>Kansas:</strong> the KGS master list of oil and gas wells comes as a zipped text file. Its metadata says the latitudes use the NAD 1927 datum, which can put a point tens of meters from where NAD83 or WGS84 would; convert it before you compare it with a phone's GPS.</li>
+</ul>
+<h2 id="why-a-location-can-be-wrong">Why a location can be wrong</h2>
+<p>Every one of these is what an operator filed, sometimes decades ago and sometimes from a survey plat, and the agencies publish it as filed. Old wells can be noticeably off; a few have no coordinates at all; a brand-new permit can take a day or more to reach the files. Plugged and cancelled wells stay in most files. Use the location to get close, then the lease sign and the operator's directions.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="is-oil-and-gas-well-location-data-public">Is oil and gas well location data public?</h3>
+<p>Yes. Each state's oil and gas regulator publishes its wells' locations, operators and statuses as public records, free to download or query, with no account.</p>
+<h3 id="which-states-publish-their-wells-as-a-live-map-service">Which states publish their wells as a live map service?</h3>
+<p>Of the ten above, New Mexico, California, Ohio, Montana and West Virginia publish their wells as live public map services, and Texas publishes its well locations that way too. Oklahoma, North Dakota, Colorado and Kansas publish downloadable files.</p>
+<h3 id="why-dont-the-coordinates-line-up-with-my-gps">Why don't the coordinates line up with my GPS?</h3>
+<p>Some states store the older NAD27 datum (Kansas says so in its metadata), while phones use WGS84. The difference can be tens of meters. The filed location itself can also be off, especially for old wells.</p>
+<aside class="app-cta">
+  <div><h2>Find the well, see the whole pad, get there</h2><p>Leaseway searches every well in 10 states by lease, API number or operator, lists every well on the pad, and guides you the last mile, with no signal. No account, on iPhone and iPad.</p></div>
+  <span class="soon">Coming soon to the App Store<small>For iPhone, iOS 17 or later</small></span>
+</aside>
+<section class="sources"><h2>Sources</h2><ul><li><a href="https://gis.rrc.texas.gov/server/rest/services/rrc_public/RRC_Public_Viewer_Srvs/MapServer" rel="noopener">Railroad Commission of Texas: public GIS map services</a></li><li><a href="https://www.rrc.texas.gov/media/bkyl5qvx/well-api-manual.pdf" rel="noopener">Railroad Commission of Texas: Well API manual (Statewide API Data)</a></li><li><a href="https://www.rrc.texas.gov/media/zgccdjpi/drillingpermitmasterpluslatitudeslongitudes_oga049m_july1.pdf" rel="noopener">Railroad Commission of Texas: Drilling Permit Master and Trailer layout (OGA049M)</a></li><li><a href="https://gis.emnrd.nm.gov/arcgis/rest/services/OCDView/Wells_Public/MapServer/0" rel="noopener">New Mexico OCD: Oil and Gas Wells map service</a></li><li><a href="https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html" rel="noopener">Oklahoma Corporation Commission: Oil and Gas data files</a></li><li><a href="https://www.dmr.nd.gov/oilgas/" rel="noopener">North Dakota Oil and Gas Division</a></li><li><a href="https://ecmc.colorado.gov/" rel="noopener">Colorado ECMC: data downloads</a></li><li><a href="https://www.kgs.ku.edu/PRS/petroDB.html" rel="noopener">Kansas Geological Survey: oil and gas well database</a></li><li><a href="https://www.kgs.ku.edu/Magellan/Qualified/ogwell_fgdc.html" rel="noopener">Kansas Geological Survey: well data metadata (datum)</a></li><li><a href="https://www.conservation.ca.gov/calgem/maps/Documents/GIS-metadata-ReadMe.pdf" rel="noopener">CalGEM: GIS metadata ReadMe</a></li><li><a href="https://gis.ohiodnr.gov/arcgis/rest/services/DOG_Services/Oilgas_Wells_public/MapServer/0" rel="noopener">Ohio DNR: Oil and Gas Wells map service</a></li><li><a href="https://bogapps.dnrc.mt.gov/" rel="noopener">Montana Board of Oil and Gas Conservation</a></li><li><a href="https://dep.wv.gov/oil-and-gas/" rel="noopener">West Virginia DEP Office of Oil and Gas</a></li></ul><p class="muted">Guides summarize public sources. Check the agency's own records before you rely on a detail.</p></section>
+<section class="related"><h2>Related guides</h2><ul><li><a href="how-to-read-an-api-well-number.html">How to read an API well number</a></li></ul></section>
+</article>
+</div>
+</main>
+<footer>
+  <div class="in">
+    <div class="foot-about">
+      <a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28"><span>Leaseway</span></a>
+      <p>The oil well map for iPhone and iPad.</p>
+      <p>© 2026 Leaseway. Well locations are public records as filed by operators with each state's oil and gas agency and can be wrong or out of date: follow lease signs, the operator's directions and site safety rules. Leaseway is not affiliated with any state agency, operator, Apple, Google, Waze, Wellsite Navigator, Petrix Maps or Petro Path.</p>
+    </div>
+    <nav aria-label="Guides"><p class="foot-title">Guides</p><a href="oil-gas-well-data-by-state.html">Well data by state</a><a href="how-to-read-an-api-well-number.html">Reading an API number</a></nav>
+    <nav aria-label="App"><p class="foot-title">App</p><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="llms.txt">llms.txt</a></nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
