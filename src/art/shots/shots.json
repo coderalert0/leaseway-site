@@ -1,0 +1,8 @@
+[
+  {"file": "iphone-1-pad.png", "title": "Every well on the pad", "caption": "STATE MERCURY in Loving County, Texas: all 9 wells listed, the pad marked on the map.", "alt": "Leaseway on iPhone showing a well on a satellite map with its panel listing every well on the pad"},
+  {"file": "iphone-2-search.png", "title": "Search the way you were told", "caption": "Lease name, well number, operator or API number, nearest first.", "alt": "Search results for state mercury, each well with its operator, county, API number and distance"},
+  {"file": "iphone-4-guide.png", "title": "The last mile", "caption": "A big arrow and the straight-line distance to the wellhead, with no signal needed.", "alt": "The last-mile guide: a large arrow, 0.3 miles, north 20 degrees, and a Directions in Apple Maps button"},
+  {"file": "iphone-5-note.png", "title": "Gate codes and turn-offs", "caption": "A note on every well, and its details from the state's records.", "alt": "A well's note with a gate code, the Record the way in button and the well's API, operator and status"},
+  {"file": "iphone-3-map.png", "title": "Wells around you", "caption": "Millions of wells, drawn fast, from each state's regulator.", "alt": "A satellite map of the Permian Basin covered in well density dots, with the nearest wells listed below"},
+  {"file": "iphone-6-states.png", "title": "Updated nightly", "caption": "Each state's well count, size, source and data date.", "alt": "The States screen listing New Mexico and Texas on the phone and California and Colorado available to download"}
+]
