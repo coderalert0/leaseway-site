@@ -245,7 +245,7 @@ Open Settings › States and tap the download button next to each state. Each on
 Leaseway uses your location for distances, the nearest wells and the guide. Allow it when asked, or in the device's Settings › Apps › Leaseway › Location (choose While Using the App). Recording your way in over the lease roads (Pro) keeps going with the screen off while it's on; iOS shows its location indicator until you tap Stop. Keep Precise Location on: the guide needs it.
 
 ### Pick your maps app
-Settings › Directions › Open directions in: Apple Maps, Google Maps or Waze. Press and hold the Directions button on a well to use a different one just this once. If the app you chose isn't installed, its web version opens.
+The first time you tap Directions, Leaseway asks which maps app to use if you have Google Maps or Waze, and remembers your answer. Change it any time in Settings › Directions › Open directions in. Press and hold the Directions button on a well to use a different one just this once. If the app you chose is deleted later, Apple Maps opens.
 
 ## Finding a well
 
