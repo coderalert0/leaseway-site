@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PAGES = ROOT / "src" / "pages"
 ART = ROOT / "src" / "art"
 BASE = "https://coderalert0.github.io/leaseway-site/"
-APP_ID = ""   # the App Store Connect Apple ID (digits); empty = "Coming soon"
+APP_ID = "6838147808"   # the App Store Connect Apple ID (digits); empty = "Coming soon"
 APP = f"https://apps.apple.com/us/app/id{APP_ID}" if APP_ID else ""
 NAME = "Leaseway"
 APP_NAME = "Oil Well Map: Leaseway"

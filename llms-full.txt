@@ -16,7 +16,7 @@ Well locations are public records as filed by operators with each state's oil an
 - Leaseway Pro: $9.99 a month or $79.99 a year in the US (new subscribers get a 1-week free trial on the yearly plan). Unlimited trips, recorded routes, unlimited lists and pins, sending lists and pins. Price promise: subscribers keep their price while they stay subscribed.
 - Privacy: no account, no analytics, no advertising and no third-party code. Location is used on the device only (the guide, distances, route recording). The app downloads state well files from Leaseway's server, which keeps no access logs. App Store privacy label: Data Not Collected.
 - Support: email, answered by a person. Settings › Email support fills in the app version and downloaded states.
-- Runs on iPhone and iPad with iOS 17 or later, in English. Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+- Runs on iPhone and iPad with iOS 17 or later, in English. On the App Store: https://apps.apple.com/us/app/id6838147808
 
 ## Questions and answers
 
