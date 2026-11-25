@@ -7,7 +7,7 @@ Checked against its sources on November 22, 2026. Published by Leaseway, an oil 
 
 ## How far off
 
-NOAA's National Geodetic Survey says the shifts between datums "are not uniform across the United States" and that no single value converts one to the other. Its NADCON guide works an example where the shift is 24 meters. You will also see about 200 meters: a USGS FAQ gives 210 as a general figure, and an Esri note gives 200 for the y coordinate in UTM or state plane, where part of the difference is the coordinate grid itself.
+The shift changes from place to place, so no single value converts one to the other; NOAA's National Geodetic Survey publishes grids for it. Its NADCON article works an example where the shift is 24 meters. You will also see about 200 meters: a USGS FAQ gives 210 as a general figure, and an Esri note gives 200 for the y coordinate in UTM or state plane, where part of the difference is the coordinate grid itself.
 
 Building Leaseway's well data we measured it, comparing NAD27 positions with the agencies' own NAD83 ones for the same wells. Unconverted, they were a median 38 meters apart. Converted, they were within about 5 meters.
 
@@ -55,7 +55,7 @@ That pattern is what a datum difference looks like: NAD27 positions drawn as if 
 
 ## Sources
 
-- [NOAA National Geodetic Survey: NADCON](https://webarchive.library.unt.edu/web/20130215202018/http://www.ngs.noaa.gov/TOOLS/Nadcon/Nadcon.shtml)
+- [NOAA National Geodetic Survey: NCAT](https://geodesy.noaa.gov/NCAT/)
 - [NOAA National Geodetic Survey: NADCON (Professional Surveyor article)](https://nweb.ngs.noaa.gov/TOOLS/Professional_Surveyor_Articles/NADCON.pdf)
 - [USGS: How large is the NAD 27 to NAD 83 shift?](https://www.usgs.gov/faqs/how-large-north-american-datum-nad-27-nad-83-shift)
 - [Railroad Commission of Texas: Digital Map Information and GIS Data FAQ](https://rrc.texas.gov/about-us/faqs/general-faqs/digital-map-information-gis-data)
