@@ -66,6 +66,64 @@ iPhone and iPad with iOS 17 or later. On iPad, the well panel sits beside the ma
 
 ---
 
+# How to find a well site and drive to it
+
+> Get the API number if you can, because lease and well names repeat. Look the well up, check the county and operator, and get the surface location's coordinates. Navigate to the lease road entrance first, not straight to the wellhead, and save everything on the phone before you lose signal.
+
+Source page: https://coderalert0.github.io/leaseway-site/find-a-well-site-and-drive-to-it.html
+Checked against its sources on November 22, 2026. Published by Leaseway, an oil well map for iPhone and iPad.
+
+## What you were given
+
+| You have | It finds | Watch for |
+|---|---|---|
+| API number | One surface location | Texas often shows 8 digits, without the leading 42 |
+| Lease and well number | Often several wells | The same lease name in other counties; "1H" on many leases |
+| Operator and well name | Often several wells | Operators change; the state's record may be a step behind |
+| Section, township, range | A square mile | Texas uses abstracts and surveys instead |
+| Coordinates | One spot | Datum (NAD27 or NAD83), and surface or bottom hole |
+
+## Before you leave signal
+
+1. **Check the county and operator** against the work order. A right name in the wrong county is the usual wrong turn.
+2. **Look at the pad, not only the well.** Several wells can share one pad, and the sign at the gate may name another one.
+3. **Find the way in on imagery.** Map apps know county roads; many lease roads aren't on them, and a straight-line route can end at a locked gate or a fence.
+4. **Navigate to where the lease road leaves the county road**, then to the pad.
+5. **Save the maps offline**, and screenshot the directions anyway.
+6. **Ask for the gate code and the H2S status** before you go, not at the gate.
+
+## The last mile
+
+Past the end of the mapped road, use the bearing and distance to the surface location and keep to roads you can see. If the arrow points across a pasture, look for the road that goes around. Record your track in: it is the directions for the next person.
+
+Follow posted speed limits and signs, sign in where the site asks, and don't enter a location you aren't cleared for.
+
+## In Leaseway
+
+Leaseway searches wells in 10 states by lease name, API number in any form, or operator, with no signal, and shows every well on the pad. It hands directions to Apple Maps, Google Maps or Waze, then guides by compass past where the road ends, and Pro can record the way in. Wells come from each state's regulator; the app shows the date of the data.
+
+## Frequently asked questions
+
+### How do I find an oil well by its lease name?
+
+Search the name with the well number, then match the county and operator. Names repeat, so confirm with the API number before you drive.
+
+### Why do directions stop before the well?
+
+Map apps route on roads they know. Private lease roads are often missing, so they stop at the nearest mapped road.
+
+### Does the API number tell me where the well is?
+
+It tells you the state and county. The location itself is in the regulator's record for that number.
+
+## Sources
+
+- [Railroad Commission of Texas: Oil and Gas Well Records](https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/)
+- [PPDM: US Well Number Standard](https://ppdm.org/ppdm/PPDM/IEDS/Well_Identification/US_Well_Number_Standard/PPDM/US_Well_Number_Standard.aspx)
+
+
+---
+
 # Oil and gas well locations by state: where the free public data comes from
 
 > Every oil-producing state's regulator publishes its wells' locations for free, usually as a public map service or a downloadable file. Texas has the Railroad Commission's GIS well layer plus its well and permit files, New Mexico the OCD's well map service, Oklahoma the OCC's RBDMS well file, North Dakota the NDIC's daily well shapefile, and Colorado the ECMC's daily well-spot shapefile. Locations are what operators filed, so they can be off, and some states' coordinates use the older NAD27 datum.
@@ -226,6 +284,73 @@ No. A drilling permit and a lease have their own numbers. In Texas one oil lease
 - [Railroad Commission of Texas: Glossary for Well Log List](https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/glossary-for-well-log-list/)
 - [Oklahoma Corporation Commission: Oil and Gas County Table](https://oklahoma.gov/occ/divisions/oil-gas/county-table.html)
 - [West Virginia DEP Office of Oil and Gas: API Well Number Explanation](https://dep.wv.gov/oil-and-gas/GI/API_Explanation/Pages/default.aspx)
+
+
+---
+
+# NAD27 and NAD83 well coordinates
+
+> The same latitude and longitude mark different spots on the ground in NAD27 and NAD83, usually tens of meters apart and more in places. GPS and phone maps use WGS 84, which is close to NAD83, so NAD27 well coordinates typed into a phone land off the pad unless they are converted. The shift varies from place to place: there is no one number to add.
+
+Source page: https://coderalert0.github.io/leaseway-site/nad27-nad83-well-coordinates.html
+Checked against its sources on November 22, 2026. Published by Leaseway, an oil well map for iPhone and iPad.
+
+## How far off
+
+NOAA's National Geodetic Survey says the shifts between datums "are not uniform across the United States" and that no single value converts one to the other. Its NADCON guide works an example where the shift is 24 meters. You will also see about 200 meters: a USGS FAQ gives 210 as a general figure, and an Esri note gives 200 for the y coordinate in UTM or state plane, where part of the difference is the coordinate grid itself.
+
+Building Leaseway's well data we measured it, comparing NAD27 positions with the agencies' own NAD83 ones for the same wells. Unconverted, they were a median 38 meters apart. Converted, they were within about 5 meters.
+
+Thirty-eight meters is the difference between standing at the wellhead and standing across the lease road.
+
+## Which datum a number is in
+
+| Where it came from | Datum |
+|---|---|
+| A phone, or GPS set to its default | WGS 84, close to NAD83 |
+| Railroad Commission of Texas digital map data | NAD27, according to the RRC's FAQ |
+| Kansas Geological Survey | NAD27 and NAD83 both published |
+| An older plat, permit or paper file | Often NAD27; look for the note near the seal or the title block |
+
+Plats and permits usually name the datum near the coordinates. If one doesn't, the year is a hint and not an answer: check it against something you can see.
+
+## How to tell in the field
+
+1. Put the coordinates into a map with satellite imagery.
+2. Find the pad. If every well on the lease sits the same distance and direction from its pad, it is a datum difference, not a bad record.
+3. Convert with NOAA's [NCAT](https://geodesy.noaa.gov/NCAT/), which replaced NADCON, and look again.
+4. One well off on its own is more likely a typing error, or a bottom-hole location.
+
+## Surface or bottom hole
+
+A horizontal well's bottom hole can be a mile or more from its surface location. Driving directions need the surface hole. If the coordinates land in an empty field with a pad a mile away, you probably have the bottom hole.
+
+## In Leaseway
+
+Leaseway shows surface locations in NAD83. Positions that a state publishes in NAD27 are converted when the state's pack is built, with one set of parameters for the lower 48; against the agencies' own NAD83 values the result was within 5 meters.
+
+## Frequently asked questions
+
+### Is WGS 84 the same as NAD83?
+
+Not exactly, but they are within a couple of meters of each other in the lower 48, which doesn't matter for finding a wellhead.
+
+### Can I add a fixed offset to convert NAD27 to NAD83?
+
+No. The shift changes from place to place. Use NOAA's NCAT or software that has its grids.
+
+### Why are all the wells on my map shifted the same way?
+
+That pattern is what a datum difference looks like: NAD27 positions drawn as if they were NAD83 or WGS 84.
+
+## Sources
+
+- [NOAA National Geodetic Survey: NADCON](https://webarchive.library.unt.edu/web/20130215202018/http://www.ngs.noaa.gov/TOOLS/Nadcon/Nadcon.shtml)
+- [NOAA National Geodetic Survey: NADCON (Professional Surveyor article)](https://nweb.ngs.noaa.gov/TOOLS/Professional_Surveyor_Articles/NADCON.pdf)
+- [USGS: How large is the NAD 27 to NAD 83 shift?](https://www.usgs.gov/faqs/how-large-north-american-datum-nad-27-nad-83-shift)
+- [Railroad Commission of Texas: Digital Map Information and GIS Data FAQ](https://rrc.texas.gov/about-us/faqs/general-faqs/digital-map-information-gis-data)
+- [Esri: Transforming coverages between NAD27 and NAD83](https://resources.arcgis.com/en/help/main/10.2/0013/001300000052000000.htm)
+- The 38 and 5 meter figures: our own comparison with Kansas and Texas agency data, November 2026
 
 
 ---

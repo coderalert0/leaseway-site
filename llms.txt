@@ -20,8 +20,10 @@ Well locations are public records as filed by operators with each state's oil an
 
 ## Guides
 
+- [How to find a well site and drive to it](https://coderalert0.github.io/leaseway-site/find-a-well-site-and-drive-to-it.md): From a lease name, API number or legal description to the pad, and the last mile after the road ends. What to check before you leave pavement.
 - [Oil and gas well locations by state: where the free public data comes from](https://coderalert0.github.io/leaseway-site/oil-gas-well-data-by-state.md): Where 10 states publish oil and gas well locations for free: Texas RRC, New Mexico OCD, Oklahoma OCC, North Dakota, Colorado ECMC and more, with formats and update schedules.
 - [How to read an API well number](https://coderalert0.github.io/leaseway-site/how-to-read-an-api-well-number.md): What each digit of an API well number means, the state codes (Texas 42, New Mexico 30, Oklahoma 35), why Texas shows 8 digits, and why one well has several numbers.
+- [NAD27 and NAD83 well coordinates](https://coderalert0.github.io/leaseway-site/nad27-nad83-well-coordinates.md): An oil well's latitude and longitude mean different spots in NAD27 and NAD83. How far apart they are, which agencies use which, and how to tell in the field.
 
 ## App
 

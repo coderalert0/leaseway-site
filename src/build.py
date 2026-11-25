@@ -318,7 +318,7 @@ def faq_schema(text):
 # ---------- Guides ----------
 
 guides = [parse(p) for p in sorted((PAGES / "guides").glob("*.md"))]
-order = ["oil-gas-well-data-by-state", "how-to-read-an-api-well-number"]
+order = ["find-a-well-site-and-drive-to-it", "oil-gas-well-data-by-state", "how-to-read-an-api-well-number", "nad27-nad83-well-coordinates"]
 guides.sort(key=lambda g: order.index(g["slug"]) if g["slug"] in order else len(order))
 by_slug = {g["slug"]: g for g in guides}
 FOOTER_GUIDES = "".join(f'<a href="{g["slug"]}.html">{html.escape(g["nav"])}</a>' for g in guides)
